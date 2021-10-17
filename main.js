@@ -32,12 +32,12 @@ function speak() {
     Webcam.attach(camera);
     setTimeout(function(){
         take_snapshot();
-        
+        save();
     }   ,5000
     );
 }
 
-Webcam.Set({
+Webcam.set({
     width:1080,
     height:720,
     image_format: 'jpeg',
